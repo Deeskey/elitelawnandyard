@@ -62,10 +62,13 @@ margin:0 20px;
 }
 
 .content p{
-    
-    margin: 30px;
+
+    font-size: 30px;
+    margin: 100px;
     font-weight: 100;
     line-height: 35px;
+    padding: 10px;
+    background-color:black;
 }
 
 .content h3{
@@ -79,7 +82,7 @@ margin:0 20px;
     
     margin: 50px;
     font-size: 20px;
-     list-style: none
+     list-style: none;
     
             
         
