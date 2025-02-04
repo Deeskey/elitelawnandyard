@@ -17,6 +17,88 @@
         
         </ul>
        </div> 
+ <style type= "text/css">
+ .contact{
+           
+           padding: 0;
+           margin: 0;
+               box-sizing: border-box;
+           }
+           
+           .contact-container {
+               
+               height: 100vh;
+               display: flex;
+               align-items: center;
+               justify-content: space-evenly;
+               
+               
+               
+               
+           }
+           
+           .contact-left {
+               
+               display: flex;
+               flex-direction:column;
+               align-items: start;
+               grid-gap:20px;
+               
+           }
+       
+           .contact-left-title hr {
+               
+               border: none;
+               width: 100%;
+               height: 5px;
+               background-color: green;
+               border-radius: 10px;
+               margin-bottom: 20px;
+           }
+           
+           .contact-inputs {
+               
+               width: 400px;
+               height: 50px;
+                   border: none;
+               outline: none;
+               padding-left: 25px;
+               font-weight: 500;
+               color:dodgerblue;
+               border-radius: 50px;
+               
+               
+           }
+           
+           .contact-left textarea{
+               
+               height:140px;
+               padding-top: 15px;
+               border-radius: 20px;
+               
+           }
+           
+           .contact-inputs:focus {
+               
+               border: 3.5px solid green;
+            
+           }
+           
+           .contact-left button{
+               
+               display:flex;
+               align-items: center;
+               padding: 15px 30px;
+               font-size: 16px;
+               color: green;
+               grid-gap: 10px;
+               border: none;
+               border-radius: 50px;
+               background-color: green;
+               cursor: pointer;
+               
+           }
+       </style>
        
        <div class="content">
        
@@ -52,7 +134,22 @@ Having lived in Utah County for over 60 years, I've gained extensive experience 
        <h1> elitelawnandyard@gmail.com</h1>
            <h1>(801)368-6570</h1>
            
-    <p>Contact us for a free quote today!</p> 
+    <div class="contact-container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title"> 
+        <h1>Contact us today!</h1>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="2d509776-be60-4a42-b5cf-0fb17f1deab8">
+        <input type="text" name="name" placeholder="Name" class="contact-inputs" required>
+        <input type="text" name="email" placeholder="Email" class="contact-inputs" required>
+        <input type="text" name="phone" placeholder="Phone Number" class="contact-inputs" required>
+        <input type="text" name="adress" placeholder="Adress" class="contact-inputs" required>
+        <textarea name="message" placeholder="Message" class="contact-inputs" required></textarea>
+        <button type="submit">Submit</button>
+        
+        
+        </form></div>
     
  <a class="socialicon" href="https://www.instagram.com/elite_lawn_and_yard/" target="blank"><img src="images/instagram%20icon.png"> </a>
     <a class="socialicon" href="https://www.facebook.com/profile.php?id=100085954705696" target="blank"><img src="images/fb%20icon.png"> </a>
